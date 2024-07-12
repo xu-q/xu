@@ -1,0 +1,12 @@
+spring:
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password:
+
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+    url: jdbc:mysql://127.0.0.1:3306/xu
+    type: com.alibaba.druid.pool.DruidDataSource

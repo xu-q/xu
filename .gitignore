@@ -36,3 +36,7 @@ build/
 
 ### Mac OS ###
 .DS_Store
+/.idea/httpRequests/http-client.cookies
+/.idea/httpRequests/http-requests-log.http
+/.idea/uiDesigner.xml
+/.idea/workspace.xml
