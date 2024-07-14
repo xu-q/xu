@@ -2,7 +2,7 @@ package com.io;
 
 import java.io.*;
 
-public class Reader {
+public  class Reader {
     public static void main(String[] args) throws IOException {
         //System.out.println(wordsCount("C:\\Users\\xuqin\\Desktop\\新建 文本文档.txt", "我爱你"));
         getAllFileName("C:\\Users\\xuqin\\Desktop\\新建文件夹");
