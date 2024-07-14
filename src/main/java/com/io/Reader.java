@@ -5,7 +5,7 @@ import java.io.*;
 public class Reader {
     public static void main(String[] args) throws IOException {
         //System.out.println(wordsCount("C:\\Users\\xuqin\\Desktop\\新建 文本文档.txt", "我爱你"));
-        getAllFileName("C:\\Users\\xuqin\\Desktop\\学位英语 资料包");
+        getAllFileName("C:\\Users\\xuqin\\Desktop\\新建文件夹");
     }
 
     public static int wordsCount(String path, String words) throws IOException {
@@ -24,10 +24,12 @@ public class Reader {
 
     public static void getAllFileName(String path){
         File file = new File(path);
-        if(file.isDirectory()){
+        if (file.isDirectory()) {
             for (File f : file.listFiles()) {
-                getAllFileName(f.getPath());
-                if(f.isFile()){
+                if (f.isDirectory()) {
+                    getAllFileName(f.getPath());
+                }
+                if (f.isFile()) {
                     System.out.println(f.getPath());
                 }
             }
