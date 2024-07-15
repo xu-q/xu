@@ -1,4 +1,4 @@
-package com.MyAnnotation;
+package com.demo.MyAnnotation;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
@@ -15,7 +15,7 @@ import java.util.Arrays;
 public class MyannotationInterceptor {
 
 
-    @Pointcut("@annotation(com.MyAnnotation.Myannotation)")
+    @Pointcut("@annotation(com.demo.MyAnnotation.Myannotation)")
     private void logPointCut() {
     }
 

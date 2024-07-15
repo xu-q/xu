@@ -1,4 +1,4 @@
-package com;
+package com.demo;
 
 import cn.hutool.core.lang.Snowflake;
 import cn.hutool.core.net.NetUtil;

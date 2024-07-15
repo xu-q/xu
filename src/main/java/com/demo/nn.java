@@ -1,4 +1,4 @@
-package com;
+package com.demo;
 
 public class nn implements rr {
     @Override

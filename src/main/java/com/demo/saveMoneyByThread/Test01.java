@@ -1,4 +1,4 @@
-package com.saveMoneyByThread;
+package com.demo.saveMoneyByThread;
 
 
 import java.util.concurrent.ExecutorService;

@@ -1,4 +1,4 @@
-package com.saveMoneyByThread;
+package com.demo.saveMoneyByThread;
 
 public class AddMoneyThread implements Runnable {
     private Account account; // 存入账户

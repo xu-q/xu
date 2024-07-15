@@ -1,4 +1,4 @@
-package com.saveMoneyByThread;
+package com.demo.saveMoneyByThread;
 
 public class Account {
     private double balance; // 账户余额

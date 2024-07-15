@@ -1,4 +1,4 @@
-package com.io;
+package com.demo.io;
 
 import java.io.*;
 
