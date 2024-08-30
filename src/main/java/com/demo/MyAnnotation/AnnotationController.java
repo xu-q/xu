@@ -1,16 +1,14 @@
-package com.Controller;
+package com.demo.MyAnnotation;
 
-import com.demo.MyAnnotation.Myannotation;
-import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
+@RestController
 @RequestMapping("/annotation")
 public class AnnotationController {
 
-    @RequestMapping("/level1")
-    @ResponseBody
+    @GetMapping("/level1")
     @Myannotation(level = 1)
     public String level1(String name, int age) {
         System.out.println("level1方法执行中");
@@ -18,16 +16,14 @@ public class AnnotationController {
     }
 
 
-    @RequestMapping("/level2")
-    @ResponseBody
+    @GetMapping("/level2")
     @Myannotation(level = 2)
     public String level2(String name, int age) {
         System.out.println("level2方法执行中");
         return name + age;
     }
 
-    @RequestMapping("/level")
-    @ResponseBody
+    @GetMapping("/level")
     @Myannotation()
     public String level(String name, int age) {
         System.out.println("level方法执行中");

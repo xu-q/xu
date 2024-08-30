@@ -10,3 +10,15 @@ spring:
     password: root
     url: jdbc:mysql://127.0.0.1:3306/xu
     type: com.alibaba.druid.pool.DruidDataSource
+
+# 接口文档配置
+knife4j:
+  enable: true
+  openapi:
+    title: "接口文档信息"
+    version: 1.0
+    group:
+      default:
+        api-rule: package
+        api-rule-resources:
+          - com
